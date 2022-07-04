@@ -1,5 +1,5 @@
-const loginForm = document.querySelector('.login-form');
-loginForm.addEventListener('submit', onButtonLoginFormSubmit);
+const avtorizationForm = document.querySelector('.login-form');
+avtorizationForm.addEventListener('submit', onButtonLoginFormSubmit);
 
 function onButtonLoginFormSubmit(event) {
     event.preventDefault();
@@ -14,6 +14,6 @@ function onButtonLoginFormSubmit(event) {
           password,
         };
         console.log(formData);
-      }
-    return loginForm.reset();
+        return avtorizationForm.reset();
+      }     
 };
