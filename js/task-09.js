@@ -8,6 +8,7 @@ function getRandomHexColor() {
 }
 
 function onColorChangeByClick(){
-  spanColorEl.textContent = getRandomHexColor();
-  document.body.style.backgroundColor = getRandomHexColor();
-}
+  let randomColor = getRandomHexColor();  
+  spanColorEl.textContent = randomColor;
+   document.body.setAttribute('style', `background-color: ${randomColor}`);
+ }
